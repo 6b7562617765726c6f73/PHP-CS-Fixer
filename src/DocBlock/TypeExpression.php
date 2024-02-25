@@ -78,7 +78,7 @@ final class TypeExpression
                         (?:
                             \h*,\h*
                             (?&callable_argument)
-                        )*
+                        )*+
                         (?:\h*,\h*)?
                     |)
                     \h*\)
@@ -95,7 +95,7 @@ final class TypeExpression
                         (?:
                             \h*,\h*
                             (?&types_inner)
-                        )*
+                        )*+
                         (?:\h*,\h*)?
                     )
                     \h*>
