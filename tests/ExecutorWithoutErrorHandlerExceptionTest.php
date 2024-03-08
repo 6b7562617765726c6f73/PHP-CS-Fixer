@@ -14,20 +14,18 @@ declare(strict_types=1);
 
 namespace PhpCsFixer\Tests;
 
-use PhpCsFixer\PregException;
+use PhpCsFixer\ExecutorWithoutErrorHandlerException;
 
 /**
- * @author Kuba Werłos <werlos@gmail.com>
- *
  * @internal
  *
- * @covers \PhpCsFixer\PregException
+ * @covers \PhpCsFixer\ExecutorWithoutErrorHandlerException
  */
-final class PregExceptionTest extends TestCase
+final class ExecutorWithoutErrorHandlerExceptionTest extends TestCase
 {
-    public function testPregException(): void
+    public function testIsRuntimeException(): void
     {
-        $exception = new PregException('foo', 123);
+        $exception = new ExecutorWithoutErrorHandlerException('foo', 123);
 
         self::assertSame('foo', $exception->getMessage());
         self::assertSame(123, $exception->getCode());
