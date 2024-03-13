@@ -886,13 +886,13 @@ final class TypeExpressionTest extends TestCase
 
     private static function makeLongArrayShapeType(): string
     {
-        return 'array{' . implode(
+        return 'array{'.implode(
             ', ',
             array_map(
                 static fn (int $k): string => sprintf('key%sno%d: int', 0 === $k % 2 ? '-' : '_', $k),
                 range(1, 1_000),
             ),
-        ) . '}';
+        ).'}';
     }
 
     /**
