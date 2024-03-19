@@ -38,20 +38,20 @@ final class TypeExpression
      *
      * @internal
      */
-    public const REGEX_TYPES = '(?<types>(?x) # one or several types separated by `|` or `&`
+    public const REGEX_TYPES = '(?<types>(?>(?x) # one or several types separated by `|` or `&`
 '.self::REGEX_TYPE.'
         (?:
             \h*(?<glue>[|&])\h*
             (?&type)
         )*+
-    )';
+    ))';
 
     /**
      * Based on:
      * - https://github.com/phpstan/phpdoc-parser/blob/1.26.0/doc/grammars/type.abnf fuzzing grammar
      * - and https://github.com/phpstan/phpdoc-parser/blob/1.26.0/src/Parser/PhpDocParser.php parser impl.
      */
-    private const REGEX_TYPE = '(?<type>(?x) # single type
+    private const REGEX_TYPE = '(?<type>(?>(?x) # single type
             (?<nullable>\??\h*)
             (?:
                 (?<array_shape>
@@ -196,15 +196,15 @@ final class TypeExpression
                 (\h*\[\h*\])*
             )
             (?:(?=1)0
-                (?<types_inner>
+                (?<types_inner>(?>
                     (?&type)
                     (?:
                         \h*[|&]\h*
                         (?&type)
                     )*+
-                )
+                ))
             |)
-        )';
+        ))';
 
     private string $value;
 
