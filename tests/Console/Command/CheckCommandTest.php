@@ -54,6 +54,11 @@ final class CheckCommandTest extends TestCase
             ]
         );
 
+        self::assertStringContainsString( // @TODO: should be NOT contains
+            'Running analysis',
+            $commandTester->getDisplay()
+        );
+
         self::assertStringNotContainsString(
             '--dry-run',
             $commandTester->getDisplay()
