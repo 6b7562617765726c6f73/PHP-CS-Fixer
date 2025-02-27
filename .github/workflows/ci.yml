@@ -192,6 +192,7 @@ jobs:
           php-coverage: ${{ matrix.collect-code-coverage || matrix.run-mutation-tests }}
           composer-flags: ${{ matrix.composer-flags }}
           composer-flex-with-symfony-version: ${{ matrix.execute-flex-with-symfony-version }}
+          ini-values: opcache.enable_cli=1
 
       # Execute migration rules before running tests and self-fixing,
       # so we know that our codebase is future-ready.

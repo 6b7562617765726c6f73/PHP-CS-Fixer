@@ -21,6 +21,9 @@ inputs:
   composer-flex-with-symfony-version:
     description: 'Sf version to determine with Flex'
     required: false
+  ini-values:
+    description: 'Extra ini values'
+    required: false
 
 runs:
   using: "composite"
@@ -45,6 +48,7 @@ runs:
         version: ${{ inputs.php }}
         coverage: ${{ steps.setup-php-resolve-coverage.outputs.result }}
         tools: ${{ steps.setup-php-resolve-tools.outputs.result }}, ${{ inputs.tools }}
+        ini-values: ${{ inputs.ini-values }}
 
     - name: Configure Symfony Flex
       if: inputs.composer-flex-with-symfony-version

@@ -12,6 +12,9 @@ inputs:
     description: 'tools'
     required: false
     default: 'none'
+  ini-values:
+    description: 'Extra ini values'
+    required: false
 
 runs:
   using: "composite"
@@ -23,4 +26,4 @@ runs:
         coverage: ${{ inputs.coverage }}
         tools: composer, ${{ inputs.tools }}
         extensions: none, ctype, curl, dom, json, mbstring, opcache, openssl, simplexml, tokenizer, xml, xmlwriter, zip
-        ini-values: opcache.enable_cli=1, zend.assertions=1
+        ini-values: zend.assertions=1, ${{ inputs.ini-values }}
