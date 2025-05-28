@@ -48,29 +48,29 @@ final class OrderedInterfacesFixer extends AbstractFixer implements Configurable
     use ConfigurableFixerTrait;
 
     /** @internal */
-    public const OPTION_DIRECTION = 'direction';
+    public const string OPTION_DIRECTION = 'direction';
 
     /** @internal */
-    public const OPTION_ORDER = 'order';
+    public const string OPTION_ORDER = 'order';
 
     /** @internal */
-    public const DIRECTION_ASCEND = 'ascend';
+    public const string DIRECTION_ASCEND = 'ascend';
 
     /** @internal */
-    public const DIRECTION_DESCEND = 'descend';
+    public const string DIRECTION_DESCEND = 'descend';
 
     /** @internal */
-    public const ORDER_ALPHA = 'alpha';
+    public const string ORDER_ALPHA = 'alpha';
 
     /** @internal */
-    public const ORDER_LENGTH = 'length';
+    public const string ORDER_LENGTH = 'length';
 
     /**
      * Array of supported directions in configuration.
      *
      * @var list<string>
      */
-    private const SUPPORTED_DIRECTION_OPTIONS = [
+    private const array SUPPORTED_DIRECTION_OPTIONS = [
         self::DIRECTION_ASCEND,
         self::DIRECTION_DESCEND,
     ];
@@ -80,7 +80,7 @@ final class OrderedInterfacesFixer extends AbstractFixer implements Configurable
      *
      * @var list<string>
      */
-    private const SUPPORTED_ORDER_OPTIONS = [
+    private const array SUPPORTED_ORDER_OPTIONS = [
         self::ORDER_ALPHA,
         self::ORDER_LENGTH,
     ];

@@ -32,7 +32,7 @@ final class TagComparator
      *
      * @internal
      */
-    public const DEFAULT_GROUPS = [
+    public const array DEFAULT_GROUPS = [
         ['deprecated', 'link', 'see', 'since'],
         ['author', 'copyright', 'license'],
         ['category', 'package', 'subpackage'],

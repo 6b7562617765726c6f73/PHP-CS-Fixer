@@ -53,14 +53,14 @@ final class FunctionDeclarationFixer extends AbstractFixer implements Configurab
     /**
      * @internal
      */
-    public const SPACING_NONE = 'none';
+    public const string SPACING_NONE = 'none';
 
     /**
      * @internal
      */
-    public const SPACING_ONE = 'one';
+    public const string SPACING_ONE = 'one';
 
-    private const SUPPORTED_SPACINGS = [self::SPACING_NONE, self::SPACING_ONE];
+    private const array SUPPORTED_SPACINGS = [self::SPACING_NONE, self::SPACING_ONE];
 
     private string $singleLineWhitespaceOptions = " \t";
 

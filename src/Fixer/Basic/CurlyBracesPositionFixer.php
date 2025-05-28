@@ -58,12 +58,12 @@ final class CurlyBracesPositionFixer extends AbstractProxyFixer implements Confi
     /**
      * @internal
      */
-    public const NEXT_LINE_UNLESS_NEWLINE_AT_SIGNATURE_END = 'next_line_unless_newline_at_signature_end';
+    public const string NEXT_LINE_UNLESS_NEWLINE_AT_SIGNATURE_END = 'next_line_unless_newline_at_signature_end';
 
     /**
      * @internal
      */
-    public const SAME_LINE = 'same_line';
+    public const string SAME_LINE = 'same_line';
 
     private BracesPositionFixer $bracesPositionFixer;
 

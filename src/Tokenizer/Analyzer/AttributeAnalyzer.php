@@ -28,7 +28,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class AttributeAnalyzer
 {
-    private const TOKEN_KINDS_NOT_ALLOWED_IN_ATTRIBUTE = [
+    private const array TOKEN_KINDS_NOT_ALLOWED_IN_ATTRIBUTE = [
         ';',
         '{',
         [T_ATTRIBUTE],

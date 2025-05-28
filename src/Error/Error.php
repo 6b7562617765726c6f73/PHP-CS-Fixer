@@ -28,17 +28,17 @@ final class Error implements \JsonSerializable
     /**
      * Error which has occurred in linting phase, before applying any fixers.
      */
-    public const TYPE_INVALID = 1;
+    public const int TYPE_INVALID = 1;
 
     /**
      * Error which has occurred during fixing phase.
      */
-    public const TYPE_EXCEPTION = 2;
+    public const int TYPE_EXCEPTION = 2;
 
     /**
      * Error which has occurred in linting phase, after applying any fixers.
      */
-    public const TYPE_LINT = 3;
+    public const int TYPE_LINT = 3;
 
     /** @var self::TYPE_* */
     private int $type;

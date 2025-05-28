@@ -48,7 +48,7 @@ final class NoHomoglyphNamesFixer extends AbstractFixer
      *
      * @var array<string, string>
      */
-    private const REPLACEMENTS = [
+    private const array REPLACEMENTS = [
         'O' => '0',
         '０' => '0',
         'I' => '1',

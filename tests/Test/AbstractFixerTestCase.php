@@ -59,7 +59,7 @@ abstract class AbstractFixerTestCase extends TestCase
      *
      * @var array<string, array<string, bool>>
      */
-    private const ALLOWED_REQUIRED_OPTIONS = [
+    private const array ALLOWED_REQUIRED_OPTIONS = [
         'header_comment' => ['header' => true],
     ];
 

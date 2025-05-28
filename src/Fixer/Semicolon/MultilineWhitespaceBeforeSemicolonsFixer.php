@@ -49,12 +49,12 @@ final class MultilineWhitespaceBeforeSemicolonsFixer extends AbstractFixer imple
     /**
      * @internal
      */
-    public const STRATEGY_NO_MULTI_LINE = 'no_multi_line';
+    public const string STRATEGY_NO_MULTI_LINE = 'no_multi_line';
 
     /**
      * @internal
      */
-    public const STRATEGY_NEW_LINE_FOR_CHAINED_CALLS = 'new_line_for_chained_calls';
+    public const string STRATEGY_NEW_LINE_FOR_CHAINED_CALLS = 'new_line_for_chained_calls';
 
     public function getDefinition(): FixerDefinitionInterface
     {

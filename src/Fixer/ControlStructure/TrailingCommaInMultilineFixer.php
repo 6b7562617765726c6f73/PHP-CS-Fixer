@@ -55,21 +55,21 @@ final class TrailingCommaInMultilineFixer extends AbstractFixer implements Confi
     /**
      * @internal
      */
-    public const ELEMENTS_ARRAYS = 'arrays';
+    public const string ELEMENTS_ARRAYS = 'arrays';
 
     /**
      * @internal
      */
-    public const ELEMENTS_ARGUMENTS = 'arguments';
+    public const string ELEMENTS_ARGUMENTS = 'arguments';
 
     /**
      * @internal
      */
-    public const ELEMENTS_PARAMETERS = 'parameters';
+    public const string ELEMENTS_PARAMETERS = 'parameters';
 
-    private const MATCH_EXPRESSIONS = 'match';
+    private const string MATCH_EXPRESSIONS = 'match';
 
-    private const ARRAY_DESTRUCTURING = 'array_destructuring';
+    private const string ARRAY_DESTRUCTURING = 'array_destructuring';
 
     public function getDefinition(): FixerDefinitionInterface
     {

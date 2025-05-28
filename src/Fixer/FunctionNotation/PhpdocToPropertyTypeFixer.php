@@ -42,7 +42,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocToPropertyTypeFixer extends AbstractPhpdocToTypeDeclarationFixer implements ConfigurableFixerInterface, ExperimentalFixerInterface
 {
-    private const TYPE_CHECK_TEMPLATE = '<?php class A { private %s $b; }';
+    private const string TYPE_CHECK_TEMPLATE = '<?php class A { private %s $b; }';
 
     /**
      * @var array<string, true>

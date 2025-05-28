@@ -69,13 +69,13 @@ final class NoSuperfluousPhpdocTagsFixer extends AbstractFixer implements Config
     use ConfigurableFixerTrait;
 
     /** @var _TypeInfo */
-    private const NO_TYPE_INFO = [
+    private const array NO_TYPE_INFO = [
         'types' => [],
         'allows_null' => true,
     ];
-    private const SYMBOL_KINDS = [T_CLASS, T_INTERFACE, FCT::T_ENUM];
+    private const array SYMBOL_KINDS = [T_CLASS, T_INTERFACE, FCT::T_ENUM];
 
-    private const MODIFIER_KINDS = [
+    private const array MODIFIER_KINDS = [
         T_PRIVATE,
         T_PROTECTED,
         T_PUBLIC,

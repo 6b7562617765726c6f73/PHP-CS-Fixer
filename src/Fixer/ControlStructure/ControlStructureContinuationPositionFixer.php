@@ -45,14 +45,14 @@ final class ControlStructureContinuationPositionFixer extends AbstractFixer impl
     /**
      * @internal
      */
-    public const NEXT_LINE = 'next_line';
+    public const string NEXT_LINE = 'next_line';
 
     /**
      * @internal
      */
-    public const SAME_LINE = 'same_line';
+    public const string SAME_LINE = 'same_line';
 
-    private const CONTROL_CONTINUATION_TOKENS = [
+    private const array CONTROL_CONTINUATION_TOKENS = [
         T_CATCH,
         T_ELSE,
         T_ELSEIF,

@@ -42,7 +42,7 @@ final class RuleSetTest extends TestCase
      *
      * @var list<string>
      */
-    private const ORDER_MATTERS = [
+    private const array ORDER_MATTERS = [
         'ordered_imports.imports_order',
         'phpdoc_order.order',
     ];

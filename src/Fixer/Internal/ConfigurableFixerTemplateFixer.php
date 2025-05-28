@@ -64,7 +64,7 @@ use PhpCsFixer\Utils;
  */
 final class ConfigurableFixerTemplateFixer extends AbstractFixer implements InternalFixerInterface
 {
-    private const MODIFIERS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_COMMENT, FCT::T_ATTRIBUTE, FCT::T_READONLY];
+    private const array MODIFIERS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_COMMENT, FCT::T_ATTRIBUTE, FCT::T_READONLY];
 
     public function getName(): string
     {

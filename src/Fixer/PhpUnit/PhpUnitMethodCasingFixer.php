@@ -53,12 +53,12 @@ final class PhpUnitMethodCasingFixer extends AbstractPhpUnitFixer implements Con
     /**
      * @internal
      */
-    public const CAMEL_CASE = 'camel_case';
+    public const string CAMEL_CASE = 'camel_case';
 
     /**
      * @internal
      */
-    public const SNAKE_CASE = 'snake_case';
+    public const string SNAKE_CASE = 'snake_case';
 
     public function getDefinition(): FixerDefinitionInterface
     {

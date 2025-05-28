@@ -39,8 +39,8 @@ use PhpCsFixer\Tokenizer\TokensAnalyzer;
  */
 abstract class AbstractDoctrineAnnotationFixer extends AbstractFixer implements ConfigurableFixerInterface
 {
-    private const CLASS_MODIFIERS = [T_ABSTRACT, T_FINAL, FCT::T_READONLY];
-    private const MODIFIER_KINDS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_NS_SEPARATOR, T_STRING, CT::T_NULLABLE_TYPE, FCT::T_READONLY, FCT::T_PRIVATE_SET, FCT::T_PROTECTED_SET, FCT::T_PUBLIC_SET];
+    private const array CLASS_MODIFIERS = [T_ABSTRACT, T_FINAL, FCT::T_READONLY];
+    private const array MODIFIER_KINDS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_NS_SEPARATOR, T_STRING, CT::T_NULLABLE_TYPE, FCT::T_READONLY, FCT::T_PRIVATE_SET, FCT::T_PROTECTED_SET, FCT::T_PUBLIC_SET];
 
     /**
      * @var array<int, array{classIndex: int, token: Token, type: string}>

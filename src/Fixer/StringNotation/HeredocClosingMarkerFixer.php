@@ -51,7 +51,7 @@ final class HeredocClosingMarkerFixer extends AbstractFixer implements Configura
     /**
      * @var list<string>
      */
-    public const RESERVED_CLOSING_MARKERS = [
+    public const array RESERVED_CLOSING_MARKERS = [
         'CSS',
         'DIFF',
         'HTML',

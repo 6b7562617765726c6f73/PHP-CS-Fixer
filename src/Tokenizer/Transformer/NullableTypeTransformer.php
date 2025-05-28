@@ -29,7 +29,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class NullableTypeTransformer extends AbstractTransformer
 {
-    private const TYPES = [
+    private const array TYPES = [
         '(',
         ',',
         [CT::T_TYPE_COLON],

@@ -27,9 +27,9 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class SingleLineThrowFixer extends AbstractFixer
 {
-    private const REMOVE_WHITESPACE_AFTER_TOKENS = ['['];
-    private const REMOVE_WHITESPACE_AROUND_TOKENS = ['(', [T_DOUBLE_COLON]];
-    private const REMOVE_WHITESPACE_BEFORE_TOKENS = [')', ']', ',', ';'];
+    private const array REMOVE_WHITESPACE_AFTER_TOKENS = ['['];
+    private const array REMOVE_WHITESPACE_AROUND_TOKENS = ['(', [T_DOUBLE_COLON]];
+    private const array REMOVE_WHITESPACE_BEFORE_TOKENS = [')', ']', ',', ';'];
 
     public function getDefinition(): FixerDefinitionInterface
     {

@@ -23,7 +23,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class AlternativeSyntaxAnalyzer
 {
-    private const ALTERNATIVE_SYNTAX_BLOCK_EDGES = [
+    private const array ALTERNATIVE_SYNTAX_BLOCK_EDGES = [
         T_IF => [T_ENDIF, T_ELSE, T_ELSEIF],
         T_ELSE => [T_ENDIF],
         T_ELSEIF => [T_ENDIF, T_ELSE, T_ELSEIF],

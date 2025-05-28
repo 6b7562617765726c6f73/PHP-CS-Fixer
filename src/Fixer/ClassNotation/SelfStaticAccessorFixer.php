@@ -27,8 +27,8 @@ use PhpCsFixer\Tokenizer\TokensAnalyzer;
 
 final class SelfStaticAccessorFixer extends AbstractFixer
 {
-    private const CLASSY_TYPES = [T_CLASS, FCT::T_ENUM];
-    private const CLASSY_TOKENS_OF_INTEREST = [[T_CLASS], [FCT::T_ENUM]];
+    private const array CLASSY_TYPES = [T_CLASS, FCT::T_ENUM];
+    private const array CLASSY_TOKENS_OF_INTEREST = [[T_CLASS], [FCT::T_ENUM]];
     private TokensAnalyzer $tokensAnalyzer;
 
     public function getDefinition(): FixerDefinitionInterface

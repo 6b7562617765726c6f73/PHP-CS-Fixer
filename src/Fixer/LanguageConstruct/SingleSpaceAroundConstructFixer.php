@@ -55,7 +55,7 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
     /**
      * @var array<string, int>
      */
-    private const TOKEN_MAP_CONTAIN_A_SINGLE_SPACE = [
+    private const array TOKEN_MAP_CONTAIN_A_SINGLE_SPACE = [
         // for now, only one case - but we are ready to extend it, when we learn about new cases to cover
         'yield_from' => T_YIELD_FROM,
     ];
@@ -63,7 +63,7 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
     /**
      * @var array<string, int>
      */
-    private const TOKEN_MAP_PRECEDED_BY_A_SINGLE_SPACE = [
+    private const array TOKEN_MAP_PRECEDED_BY_A_SINGLE_SPACE = [
         'as' => T_AS,
         'else' => T_ELSE,
         'elseif' => T_ELSEIF,
@@ -73,7 +73,7 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
     /**
      * @var array<string, int>
      */
-    private const TOKEN_MAP_FOLLOWED_BY_A_SINGLE_SPACE = [
+    private const array TOKEN_MAP_FOLLOWED_BY_A_SINGLE_SPACE = [
         'abstract' => T_ABSTRACT,
         'as' => T_AS,
         'attribute' => CT::T_ATTRIBUTE_CLOSE,

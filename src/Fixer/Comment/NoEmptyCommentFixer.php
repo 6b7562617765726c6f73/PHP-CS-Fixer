@@ -23,11 +23,11 @@ use PhpCsFixer\Tokenizer\Tokens;
 
 final class NoEmptyCommentFixer extends AbstractFixer
 {
-    private const TYPE_HASH = 1;
+    private const int TYPE_HASH = 1;
 
-    private const TYPE_DOUBLE_SLASH = 2;
+    private const int TYPE_DOUBLE_SLASH = 2;
 
-    private const TYPE_SLASH_ASTERISK = 3;
+    private const int TYPE_SLASH_ASTERISK = 3;
 
     /**
      * {@inheritdoc}

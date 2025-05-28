@@ -44,7 +44,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocToReturnTypeFixer extends AbstractPhpdocToTypeDeclarationFixer implements ConfigurableFixerInterface, ExperimentalFixerInterface
 {
-    private const TYPE_CHECK_TEMPLATE = '<?php function f(): %s {}';
+    private const string TYPE_CHECK_TEMPLATE = '<?php function f(): %s {}';
 
     /**
      * @var array<int, array<int, int|string>>

@@ -33,7 +33,7 @@ final class EregToPregFixer extends AbstractFixer
      * @var list<array<int, string>> the list of the ext/ereg function names, their preg equivalent and the preg modifier(s), if any
      *                               all condensed in an array of arrays
      */
-    private const FUNCTIONS = [
+    private const array FUNCTIONS = [
         ['ereg', 'preg_match', ''],
         ['eregi', 'preg_match', 'i'],
         ['ereg_replace', 'preg_replace', ''],

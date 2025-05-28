@@ -33,8 +33,8 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 abstract class AbstractPhpUnitFixer extends AbstractFixer
 {
-    private const DOC_BLOCK_MODIFIERS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_COMMENT, FCT::T_ATTRIBUTE, FCT::T_READONLY];
-    private const ATTRIBUTE_MODIFIERS = [T_FINAL, FCT::T_READONLY];
+    private const array DOC_BLOCK_MODIFIERS = [T_PUBLIC, T_PROTECTED, T_PRIVATE, T_FINAL, T_ABSTRACT, T_COMMENT, FCT::T_ATTRIBUTE, FCT::T_READONLY];
+    private const array ATTRIBUTE_MODIFIERS = [T_FINAL, FCT::T_READONLY];
 
     public function isCandidate(Tokens $tokens): bool
     {

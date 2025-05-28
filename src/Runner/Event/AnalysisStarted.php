@@ -25,9 +25,9 @@ use Symfony\Contracts\EventDispatcher\Event;
  */
 final class AnalysisStarted extends Event
 {
-    public const NAME = 'fixer.analysis_started';
-    public const MODE_SEQUENTIAL = 'sequential';
-    public const MODE_PARALLEL = 'parallel';
+    public const string NAME = 'fixer.analysis_started';
+    public const string MODE_SEQUENTIAL = 'sequential';
+    public const string MODE_PARALLEL = 'parallel';
 
     /** @var self::MODE_* */
     private string $mode;

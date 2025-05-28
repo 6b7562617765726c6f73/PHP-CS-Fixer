@@ -56,7 +56,7 @@ final class NativeFunctionInvocationFixer extends AbstractFixer implements Confi
     /**
      * @internal
      */
-    public const SET_ALL = '@all';
+    public const string SET_ALL = '@all';
 
     /**
      * Subset of SET_INTERNAL.
@@ -68,12 +68,12 @@ final class NativeFunctionInvocationFixer extends AbstractFixer implements Confi
      *
      * @internal
      */
-    public const SET_COMPILER_OPTIMIZED = '@compiler_optimized';
+    public const string SET_COMPILER_OPTIMIZED = '@compiler_optimized';
 
     /**
      * @internal
      */
-    public const SET_INTERNAL = '@internal';
+    public const string SET_INTERNAL = '@internal';
 
     /**
      * @var callable

@@ -21,9 +21,9 @@ namespace PhpCsFixer\Tokenizer;
  */
 abstract class AbstractTypeTransformer extends AbstractTransformer
 {
-    private const TYPE_END_TOKENS = [')', [T_CALLABLE], [T_NS_SEPARATOR], [T_STATIC], [T_STRING], [CT::T_ARRAY_TYPEHINT]];
+    private const array TYPE_END_TOKENS = [')', [T_CALLABLE], [T_NS_SEPARATOR], [T_STATIC], [T_STRING], [CT::T_ARRAY_TYPEHINT]];
 
-    private const TYPE_TOKENS = [
+    private const array TYPE_TOKENS = [
         '|', '&', '(',
         ...self::TYPE_END_TOKENS,
         [CT::T_TYPE_ALTERNATION], [CT::T_TYPE_INTERSECTION], // some siblings may already be transformed

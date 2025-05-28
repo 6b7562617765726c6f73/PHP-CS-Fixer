@@ -52,7 +52,7 @@ final class NoUnneededControlParenthesesFixer extends AbstractFixer implements C
     /**
      * @var list<int>
      */
-    private const BLOCK_TYPES = [
+    private const array BLOCK_TYPES = [
         Tokens::BLOCK_TYPE_ARRAY_INDEX_CURLY_BRACE,
         Tokens::BLOCK_TYPE_ARRAY_SQUARE_BRACE,
         Tokens::BLOCK_TYPE_CURLY_BRACE,
@@ -63,7 +63,7 @@ final class NoUnneededControlParenthesesFixer extends AbstractFixer implements C
         Tokens::BLOCK_TYPE_PARENTHESIS_BRACE,
     ];
 
-    private const BEFORE_TYPES = [
+    private const array BEFORE_TYPES = [
         ';',
         '{',
         [T_OPEN_TAG],
@@ -83,7 +83,7 @@ final class NoUnneededControlParenthesesFixer extends AbstractFixer implements C
         [T_INCLUDE_ONCE],
     ];
 
-    private const CONFIG_OPTIONS = [
+    private const array CONFIG_OPTIONS = [
         'break',
         'clone',
         'continue',
@@ -96,7 +96,7 @@ final class NoUnneededControlParenthesesFixer extends AbstractFixer implements C
         'yield_from',
     ];
 
-    private const TOKEN_TYPE_CONFIG_MAP = [
+    private const array TOKEN_TYPE_CONFIG_MAP = [
         T_BREAK => 'break',
         T_CASE => 'switch_case',
         T_CONTINUE => 'continue',
@@ -108,13 +108,13 @@ final class NoUnneededControlParenthesesFixer extends AbstractFixer implements C
     ];
 
     // handled by the `include` rule
-    private const TOKEN_TYPE_NO_CONFIG = [
+    private const array TOKEN_TYPE_NO_CONFIG = [
         T_REQUIRE,
         T_REQUIRE_ONCE,
         T_INCLUDE,
         T_INCLUDE_ONCE,
     ];
-    private const KNOWN_NEGATIVE_PRE_TYPES = [
+    private const array KNOWN_NEGATIVE_PRE_TYPES = [
         [CT::T_CLASS_CONSTANT],
         [CT::T_DYNAMIC_VAR_BRACE_CLOSE],
         [CT::T_RETURN_REF],

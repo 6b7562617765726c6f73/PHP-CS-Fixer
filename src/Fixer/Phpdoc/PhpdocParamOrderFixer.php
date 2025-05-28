@@ -30,7 +30,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocParamOrderFixer extends AbstractFixer
 {
-    private const PARAM_TAG = 'param';
+    private const string PARAM_TAG = 'param';
 
     public function isCandidate(Tokens $tokens): bool
     {

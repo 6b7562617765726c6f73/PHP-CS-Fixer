@@ -31,7 +31,7 @@ use PhpCsFixer\Tokenizer\TokensAnalyzer;
  */
 final class VoidReturnFixer extends AbstractFixer
 {
-    private const PREVIOUS_TOKENS = [
+    private const array PREVIOUS_TOKENS = [
         T_ABSTRACT,
         T_FINAL,
         T_PRIVATE,

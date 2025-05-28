@@ -31,14 +31,14 @@ final class TypeExpression
      *
      * @internal
      */
-    public const REGEX_IDENTIFIER = '(?:(?!(?<!\*)\d)[^\x00-\x2f\x3a-\x40\x5b-\x5e\x60\x7b-\x7f]++)';
+    public const string REGEX_IDENTIFIER = '(?:(?!(?<!\*)\d)[^\x00-\x2f\x3a-\x40\x5b-\x5e\x60\x7b-\x7f]++)';
 
     /**
      * Regex to match any PHPDoc type.
      *
      * @internal
      */
-    public const REGEX_TYPES = '(?<types>(?x) # one or several types separated by `|` or `&`
+    public const string REGEX_TYPES = '(?<types>(?x) # one or several types separated by `|` or `&`
 '.self::REGEX_TYPE.'
         (?:
             \h*(?<glue>[|&])\h*
@@ -51,7 +51,7 @@ final class TypeExpression
      * - https://github.com/phpstan/phpdoc-parser/blob/1.26.0/doc/grammars/type.abnf fuzzing grammar
      * - and https://github.com/phpstan/phpdoc-parser/blob/1.26.0/src/Parser/PhpDocParser.php parser impl.
      */
-    private const REGEX_TYPE = '(?<type>(?x) # single type
+    private const string REGEX_TYPE = '(?<type>(?x) # single type
             (?<nullable>\??\h*)
             (?:
                 (?<array_shape>

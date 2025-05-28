@@ -48,7 +48,7 @@ final class RandomApiMigrationFixer extends AbstractFunctionReferenceFixer imple
     /**
      * @var array<string, array<int, int>>
      */
-    private const ARGUMENT_COUNTS = [
+    private const array ARGUMENT_COUNTS = [
         'getrandmax' => [0],
         'mt_rand' => [1, 2],
         'rand' => [0, 2],

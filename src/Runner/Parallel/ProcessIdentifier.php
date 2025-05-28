@@ -25,7 +25,7 @@ namespace PhpCsFixer\Runner\Parallel;
  */
 final class ProcessIdentifier
 {
-    private const IDENTIFIER_PREFIX = 'php-cs-fixer_parallel_';
+    private const string IDENTIFIER_PREFIX = 'php-cs-fixer_parallel_';
 
     private string $identifier;
 

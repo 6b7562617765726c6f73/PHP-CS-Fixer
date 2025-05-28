@@ -76,8 +76,8 @@ use Symfony\Component\Finder\Finder as SymfonyFinder;
  */
 final class ConfigurationResolver
 {
-    public const PATH_MODE_OVERRIDE = 'override';
-    public const PATH_MODE_INTERSECTION = 'intersection';
+    public const string PATH_MODE_OVERRIDE = 'override';
+    public const string PATH_MODE_INTERSECTION = 'intersection';
 
     private ?bool $allowRisky = null;
 

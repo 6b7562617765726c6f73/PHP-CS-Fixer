@@ -34,7 +34,7 @@ use PhpCsFixer\Hasher;
  */
 final class FileCacheManager implements CacheManagerInterface
 {
-    public const WRITE_FREQUENCY = 10;
+    public const int WRITE_FREQUENCY = 10;
 
     private FileHandlerInterface $handler;
 

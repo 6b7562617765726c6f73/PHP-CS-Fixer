@@ -34,7 +34,7 @@ use PhpCsFixer\Tokenizer\TokensAnalyzer;
  */
 final class NoUnusedImportsFixer extends AbstractFixer
 {
-    private const TOKENS_NOT_BEFORE_FUNCTION_CALL = [T_NEW, FCT::T_ATTRIBUTE];
+    private const array TOKENS_NOT_BEFORE_FUNCTION_CALL = [T_NEW, FCT::T_ATTRIBUTE];
 
     public function getDefinition(): FixerDefinitionInterface
     {

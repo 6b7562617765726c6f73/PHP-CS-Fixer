@@ -27,7 +27,7 @@ final class Tag
     /**
      * All the tags defined by the proposed PSR PHPDoc standard.
      */
-    public const PSR_STANDARD_TAGS = [
+    public const array PSR_STANDARD_TAGS = [
         'api', 'author', 'category', 'copyright', 'deprecated', 'example',
         'global', 'internal', 'license', 'link', 'method', 'package', 'param',
         'property', 'property-read', 'property-write', 'return', 'see',

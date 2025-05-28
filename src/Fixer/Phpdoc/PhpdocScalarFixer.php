@@ -45,7 +45,7 @@ final class PhpdocScalarFixer extends AbstractPhpdocTypesFixer implements Config
     /**
      * The types to fix.
      */
-    private const TYPES_MAP = [
+    private const array TYPES_MAP = [
         'boolean' => 'bool',
         'callback' => 'callable',
         'double' => 'float',

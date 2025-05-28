@@ -33,26 +33,26 @@ use PhpCsFixer\Preg;
  */
 final class DocLexer
 {
-    public const T_NONE = 1;
-    public const T_INTEGER = 2;
-    public const T_STRING = 3;
-    public const T_FLOAT = 4;
+    public const int T_NONE = 1;
+    public const int T_INTEGER = 2;
+    public const int T_STRING = 3;
+    public const int T_FLOAT = 4;
 
     // All tokens that are also identifiers should be >= 100
-    public const T_IDENTIFIER = 100;
-    public const T_AT = 101;
-    public const T_CLOSE_CURLY_BRACES = 102;
-    public const T_CLOSE_PARENTHESIS = 103;
-    public const T_COMMA = 104;
-    public const T_EQUALS = 105;
-    public const T_FALSE = 106;
-    public const T_NAMESPACE_SEPARATOR = 107;
-    public const T_OPEN_CURLY_BRACES = 108;
-    public const T_OPEN_PARENTHESIS = 109;
-    public const T_TRUE = 110;
-    public const T_NULL = 111;
-    public const T_COLON = 112;
-    public const T_MINUS = 113;
+    public const int T_IDENTIFIER = 100;
+    public const int T_AT = 101;
+    public const int T_CLOSE_CURLY_BRACES = 102;
+    public const int T_CLOSE_PARENTHESIS = 103;
+    public const int T_COMMA = 104;
+    public const int T_EQUALS = 105;
+    public const int T_FALSE = 106;
+    public const int T_NAMESPACE_SEPARATOR = 107;
+    public const int T_OPEN_CURLY_BRACES = 108;
+    public const int T_OPEN_PARENTHESIS = 109;
+    public const int T_TRUE = 110;
+    public const int T_NULL = 111;
+    public const int T_COLON = 112;
+    public const int T_MINUS = 113;
 
     /** @var array<string, self::T_*> */
     private array $noCase = [

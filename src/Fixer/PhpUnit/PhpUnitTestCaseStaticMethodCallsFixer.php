@@ -53,22 +53,22 @@ final class PhpUnitTestCaseStaticMethodCallsFixer extends AbstractPhpUnitFixer i
     /**
      * @internal
      */
-    public const CALL_TYPE_THIS = 'this';
+    public const string CALL_TYPE_THIS = 'this';
 
     /**
      * @internal
      */
-    public const CALL_TYPE_SELF = 'self';
+    public const string CALL_TYPE_SELF = 'self';
 
     /**
      * @internal
      */
-    public const CALL_TYPE_STATIC = 'static';
+    public const string CALL_TYPE_STATIC = 'static';
 
     /**
      * @var array<string, true>
      */
-    private const STATIC_METHODS = [
+    private const array STATIC_METHODS = [
         // Assert methods
         'anything' => true,
         'arrayHasKey' => true,
@@ -379,7 +379,7 @@ final class PhpUnitTestCaseStaticMethodCallsFixer extends AbstractPhpUnitFixer i
     /**
      * @var array<string, bool>
      */
-    private const ALLOWED_VALUES = [
+    private const array ALLOWED_VALUES = [
         self::CALL_TYPE_THIS => true,
         self::CALL_TYPE_SELF => true,
         self::CALL_TYPE_STATIC => true,

@@ -59,12 +59,12 @@ final class HeaderCommentFixer extends AbstractFixer implements ConfigurableFixe
     /**
      * @internal
      */
-    public const HEADER_PHPDOC = 'PHPDoc';
+    public const string HEADER_PHPDOC = 'PHPDoc';
 
     /**
      * @internal
      */
-    public const HEADER_COMMENT = 'comment';
+    public const string HEADER_COMMENT = 'comment';
 
     public function getDefinition(): FixerDefinitionInterface
     {

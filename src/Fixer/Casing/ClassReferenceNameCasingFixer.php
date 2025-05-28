@@ -27,7 +27,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 
 final class ClassReferenceNameCasingFixer extends AbstractFixer
 {
-    private const NOT_BEFORE_KINDS = [
+    private const array NOT_BEFORE_KINDS = [
         CT::T_USE_TRAIT,
         T_AS,
         T_CASE, // PHP 8.1 trait enum-case

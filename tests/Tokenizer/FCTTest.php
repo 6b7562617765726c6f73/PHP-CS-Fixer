@@ -24,7 +24,7 @@ use PhpCsFixer\Tokenizer\FCT;
  */
 final class FCTTest extends TestCase
 {
-    private const EXPECTED_CONSTANTS = [
+    private const array EXPECTED_CONSTANTS = [
         'T_AMPERSAND_FOLLOWED_BY_VAR_OR_VARARG',
         'T_AMPERSAND_NOT_FOLLOWED_BY_VAR_OR_VARARG',
         'T_ATTRIBUTE',

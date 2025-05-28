@@ -19,9 +19,9 @@ namespace PhpCsFixer\Console\Output\Progress;
  */
 final class ProgressOutputType
 {
-    public const NONE = 'none';
-    public const DOTS = 'dots';
-    public const BAR = 'bar';
+    public const string NONE = 'none';
+    public const string DOTS = 'dots';
+    public const string BAR = 'bar';
 
     /**
      * @return list<ProgressOutputType::*>

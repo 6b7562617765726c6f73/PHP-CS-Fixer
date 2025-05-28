@@ -30,7 +30,7 @@ final class DotsOutput implements ProgressOutputInterface
      *
      * @var array<FileProcessed::STATUS_*, array{symbol: string, format: string, description: string}>
      */
-    private const EVENT_STATUS_MAP = [
+    private const array EVENT_STATUS_MAP = [
         FileProcessed::STATUS_NO_CHANGES => ['symbol' => '.', 'format' => '%s', 'description' => 'no changes'],
         FileProcessed::STATUS_FIXED => ['symbol' => 'F', 'format' => '<fg=green>%s</fg=green>', 'description' => 'fixed'],
         FileProcessed::STATUS_SKIPPED => ['symbol' => 'S', 'format' => '<fg=cyan>%s</fg=cyan>', 'description' => 'skipped (cached or empty file)'],

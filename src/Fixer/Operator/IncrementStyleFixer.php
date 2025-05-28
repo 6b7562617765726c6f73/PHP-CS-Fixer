@@ -48,12 +48,12 @@ final class IncrementStyleFixer extends AbstractIncrementOperatorFixer implement
     /**
      * @internal
      */
-    public const STYLE_PRE = 'pre';
+    public const string STYLE_PRE = 'pre';
 
     /**
      * @internal
      */
-    public const STYLE_POST = 'post';
+    public const string STYLE_POST = 'post';
 
     public function getDefinition(): FixerDefinitionInterface
     {

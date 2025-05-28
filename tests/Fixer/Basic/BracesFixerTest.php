@@ -32,9 +32,9 @@ use PhpCsFixer\WhitespacesFixerConfig;
  */
 final class BracesFixerTest extends AbstractFixerTestCase
 {
-    private const CONFIGURATION_OOP_POSITION_SAME_LINE = ['position_after_functions_and_oop_constructs' => BracesFixer::LINE_SAME];
-    private const CONFIGURATION_CTRL_STRUCT_POSITION_NEXT_LINE = ['position_after_control_structures' => BracesFixer::LINE_NEXT];
-    private const CONFIGURATION_ANONYMOUS_POSITION_NEXT_LINE = ['position_after_anonymous_constructs' => BracesFixer::LINE_NEXT];
+    private const array CONFIGURATION_OOP_POSITION_SAME_LINE = ['position_after_functions_and_oop_constructs' => BracesFixer::LINE_SAME];
+    private const array CONFIGURATION_CTRL_STRUCT_POSITION_NEXT_LINE = ['position_after_control_structures' => BracesFixer::LINE_NEXT];
+    private const array CONFIGURATION_ANONYMOUS_POSITION_NEXT_LINE = ['position_after_anonymous_constructs' => BracesFixer::LINE_NEXT];
 
     public function testInvalidConfigurationClassyConstructs(): void
     {

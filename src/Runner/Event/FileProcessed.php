@@ -28,14 +28,14 @@ final class FileProcessed extends Event
     /**
      * Event name.
      */
-    public const NAME = 'fixer.file_processed';
+    public const string NAME = 'fixer.file_processed';
 
-    public const STATUS_INVALID = 1;
-    public const STATUS_SKIPPED = 2;
-    public const STATUS_NO_CHANGES = 3;
-    public const STATUS_FIXED = 4;
-    public const STATUS_EXCEPTION = 5;
-    public const STATUS_LINT = 6;
+    public const int STATUS_INVALID = 1;
+    public const int STATUS_SKIPPED = 2;
+    public const int STATUS_NO_CHANGES = 3;
+    public const int STATUS_FIXED = 4;
+    public const int STATUS_EXCEPTION = 5;
+    public const int STATUS_LINT = 6;
 
     /**
      * @var self::STATUS_*

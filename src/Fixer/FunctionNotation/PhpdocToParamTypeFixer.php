@@ -42,12 +42,12 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocToParamTypeFixer extends AbstractPhpdocToTypeDeclarationFixer implements ConfigurableFixerInterface, ExperimentalFixerInterface
 {
-    private const TYPE_CHECK_TEMPLATE = '<?php function f(%s $x) {}';
+    private const string TYPE_CHECK_TEMPLATE = '<?php function f(%s $x) {}';
 
     /**
      * @var list<array{int, string}>
      */
-    private const EXCLUDE_FUNC_NAMES = [
+    private const array EXCLUDE_FUNC_NAMES = [
         [T_STRING, '__clone'],
         [T_STRING, '__destruct'],
     ];
@@ -55,7 +55,7 @@ final class PhpdocToParamTypeFixer extends AbstractPhpdocToTypeDeclarationFixer 
     /**
      * @var array<string, true>
      */
-    private const SKIPPED_TYPES = [
+    private const array SKIPPED_TYPES = [
         'resource' => true,
         'static' => true,
         'void' => true,

@@ -48,32 +48,32 @@ final class EchoTagSyntaxFixer extends AbstractFixer implements ConfigurableFixe
     use ConfigurableFixerTrait;
 
     /** @internal */
-    public const OPTION_FORMAT = 'format';
+    public const string OPTION_FORMAT = 'format';
 
     /** @internal */
-    public const OPTION_SHORTEN_SIMPLE_STATEMENTS_ONLY = 'shorten_simple_statements_only';
+    public const string OPTION_SHORTEN_SIMPLE_STATEMENTS_ONLY = 'shorten_simple_statements_only';
 
     /** @internal */
-    public const OPTION_LONG_FUNCTION = 'long_function';
+    public const string OPTION_LONG_FUNCTION = 'long_function';
 
     /** @internal */
-    public const FORMAT_SHORT = 'short';
+    public const string FORMAT_SHORT = 'short';
 
     /** @internal */
-    public const FORMAT_LONG = 'long';
+    public const string FORMAT_LONG = 'long';
 
     /** @internal */
-    public const LONG_FUNCTION_ECHO = 'echo';
+    public const string LONG_FUNCTION_ECHO = 'echo';
 
     /** @internal */
-    public const LONG_FUNCTION_PRINT = 'print';
+    public const string LONG_FUNCTION_PRINT = 'print';
 
-    private const SUPPORTED_FORMAT_OPTIONS = [
+    private const array SUPPORTED_FORMAT_OPTIONS = [
         self::FORMAT_LONG,
         self::FORMAT_SHORT,
     ];
 
-    private const SUPPORTED_LONGFUNCTION_OPTIONS = [
+    private const array SUPPORTED_LONGFUNCTION_OPTIONS = [
         self::LONG_FUNCTION_ECHO,
         self::LONG_FUNCTION_PRINT,
     ];

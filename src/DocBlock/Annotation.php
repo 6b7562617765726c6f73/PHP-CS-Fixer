@@ -31,7 +31,7 @@ final class Annotation
      *
      * @var list<string>
      */
-    private const TAGS = [
+    private const array TAGS = [
         'extends',
         'implements',
         'method',

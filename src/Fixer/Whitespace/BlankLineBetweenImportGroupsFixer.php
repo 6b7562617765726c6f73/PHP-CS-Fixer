@@ -29,11 +29,11 @@ use PhpCsFixer\Tokenizer\TokensAnalyzer;
  */
 final class BlankLineBetweenImportGroupsFixer extends AbstractFixer implements WhitespacesAwareFixerInterface
 {
-    private const IMPORT_TYPE_CLASS = 'class';
+    private const string IMPORT_TYPE_CLASS = 'class';
 
-    private const IMPORT_TYPE_CONST = 'const';
+    private const string IMPORT_TYPE_CONST = 'const';
 
-    private const IMPORT_TYPE_FUNCTION = 'function';
+    private const string IMPORT_TYPE_FUNCTION = 'function';
 
     public function getDefinition(): FixerDefinitionInterface
     {

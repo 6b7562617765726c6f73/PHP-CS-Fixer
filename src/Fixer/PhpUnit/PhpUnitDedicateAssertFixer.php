@@ -48,7 +48,7 @@ final class PhpUnitDedicateAssertFixer extends AbstractPhpUnitFixer implements C
     /**
      * @var array<string, array{positive: string, negative: false|string, argument_count?: int, swap_arguments?: true}|true>
      */
-    private const FIX_MAP = [
+    private const array FIX_MAP = [
         'array_key_exists' => [
             'positive' => 'assertArrayHasKey',
             'negative' => 'assertArrayNotHasKey',

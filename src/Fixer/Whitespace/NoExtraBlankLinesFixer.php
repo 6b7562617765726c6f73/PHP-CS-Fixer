@@ -54,7 +54,7 @@ final class NoExtraBlankLinesFixer extends AbstractFixer implements Configurable
     /**
      * @var list<string>
      */
-    private const AVAILABLE_TOKENS = [
+    private const array AVAILABLE_TOKENS = [
         'attribute',
         'break',
         'case',

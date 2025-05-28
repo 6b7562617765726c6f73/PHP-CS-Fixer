@@ -53,59 +53,59 @@ final class BinaryOperatorSpacesFixer extends AbstractFixer implements Configura
     /**
      * @internal
      */
-    public const SINGLE_SPACE = 'single_space';
+    public const string SINGLE_SPACE = 'single_space';
 
     /**
      * @internal
      */
-    public const AT_LEAST_SINGLE_SPACE = 'at_least_single_space';
+    public const string AT_LEAST_SINGLE_SPACE = 'at_least_single_space';
 
     /**
      * @internal
      */
-    public const NO_SPACE = 'no_space';
+    public const string NO_SPACE = 'no_space';
 
     /**
      * @internal
      */
-    public const ALIGN = 'align';
+    public const string ALIGN = 'align';
 
     /**
      * @internal
      */
-    public const ALIGN_BY_SCOPE = 'align_by_scope';
+    public const string ALIGN_BY_SCOPE = 'align_by_scope';
 
     /**
      * @internal
      */
-    public const ALIGN_SINGLE_SPACE = 'align_single_space';
+    public const string ALIGN_SINGLE_SPACE = 'align_single_space';
 
     /**
      * @internal
      */
-    public const ALIGN_SINGLE_SPACE_BY_SCOPE = 'align_single_space_by_scope';
+    public const string ALIGN_SINGLE_SPACE_BY_SCOPE = 'align_single_space_by_scope';
 
     /**
      * @internal
      */
-    public const ALIGN_SINGLE_SPACE_MINIMAL = 'align_single_space_minimal';
+    public const string ALIGN_SINGLE_SPACE_MINIMAL = 'align_single_space_minimal';
 
     /**
      * @internal
      */
-    public const ALIGN_SINGLE_SPACE_MINIMAL_BY_SCOPE = 'align_single_space_minimal_by_scope';
+    public const string ALIGN_SINGLE_SPACE_MINIMAL_BY_SCOPE = 'align_single_space_minimal_by_scope';
 
     /**
      * @internal
      *
      * @const Placeholder used as anchor for right alignment.
      */
-    public const ALIGN_PLACEHOLDER = "\x2 ALIGNABLE%d \x3";
+    public const string ALIGN_PLACEHOLDER = "\x2 ALIGNABLE%d \x3";
 
     /**
      * @var list<string>
      */
-    private const SUPPORTED_OPERATORS = [
+    private const array SUPPORTED_OPERATORS = [
         '=',
         '*',
         '/',
@@ -153,7 +153,7 @@ final class BinaryOperatorSpacesFixer extends AbstractFixer implements Configura
     /**
      * @var list<null|string>
      */
-    private const ALLOWED_VALUES = [
+    private const array ALLOWED_VALUES = [
         self::ALIGN,
         self::ALIGN_BY_SCOPE,
         self::ALIGN_SINGLE_SPACE,

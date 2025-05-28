@@ -28,7 +28,7 @@ final class LongToShorthandOperatorFixer extends AbstractShortOperatorFixer
     /**
      * @var array<string, array{int, string}>
      */
-    private const OPERATORS = [
+    private const array OPERATORS = [
         '+' => [T_PLUS_EQUAL, '+='],
         '-' => [T_MINUS_EQUAL, '-='],
         '*' => [T_MUL_EQUAL, '*='],

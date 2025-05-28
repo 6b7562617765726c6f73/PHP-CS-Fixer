@@ -70,48 +70,48 @@ final class OrderedImportsFixer extends AbstractFixer implements ConfigurableFix
     /**
      * @internal
      */
-    public const IMPORT_TYPE_CLASS = 'class';
+    public const string IMPORT_TYPE_CLASS = 'class';
 
     /**
      * @internal
      */
-    public const IMPORT_TYPE_CONST = 'const';
+    public const string IMPORT_TYPE_CONST = 'const';
 
     /**
      * @internal
      */
-    public const IMPORT_TYPE_FUNCTION = 'function';
+    public const string IMPORT_TYPE_FUNCTION = 'function';
 
     /**
      * @internal
      */
-    public const SORT_ALPHA = 'alpha';
+    public const string SORT_ALPHA = 'alpha';
 
     /**
      * @TODO 4.0 remove the possibility to sort by length
      *
      * @internal
      */
-    public const SORT_LENGTH = 'length';
+    public const string SORT_LENGTH = 'length';
 
     /**
      * @internal
      */
-    public const SORT_NONE = 'none';
+    public const string SORT_NONE = 'none';
 
     /**
      * Array of supported sort types in configuration.
      *
      * @var list<string>
      */
-    private const SUPPORTED_SORT_TYPES = [self::IMPORT_TYPE_CLASS, self::IMPORT_TYPE_CONST, self::IMPORT_TYPE_FUNCTION];
+    private const array SUPPORTED_SORT_TYPES = [self::IMPORT_TYPE_CLASS, self::IMPORT_TYPE_CONST, self::IMPORT_TYPE_FUNCTION];
 
     /**
      * Array of supported sort algorithms in configuration.
      *
      * @var list<string>
      */
-    private const SUPPORTED_SORT_ALGORITHMS = [self::SORT_ALPHA, self::SORT_LENGTH, self::SORT_NONE];
+    private const array SUPPORTED_SORT_ALGORITHMS = [self::SORT_ALPHA, self::SORT_LENGTH, self::SORT_NONE];
 
     public function getDefinition(): FixerDefinitionInterface
     {

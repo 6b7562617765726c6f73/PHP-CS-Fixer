@@ -29,7 +29,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpUnitMockShortWillReturnFixer extends AbstractPhpUnitFixer
 {
-    private const RETURN_METHODS_MAP = [
+    private const array RETURN_METHODS_MAP = [
         'returnargument' => 'willReturnArgument',
         'returncallback' => 'willReturnCallback',
         'returnself' => 'willReturnSelf',

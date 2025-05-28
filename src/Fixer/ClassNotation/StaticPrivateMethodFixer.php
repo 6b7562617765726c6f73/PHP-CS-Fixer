@@ -30,7 +30,7 @@ final class StaticPrivateMethodFixer extends AbstractFixer
     /**
      * @var array<string, true>
      */
-    private const MAGIC_METHODS = [
+    private const array MAGIC_METHODS = [
         '__clone' => true,
         '__construct' => true,
         '__destruct' => true,

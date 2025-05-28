@@ -25,7 +25,7 @@ use PhpCsFixer\Tokenizer\Tokens;
 
 final class ControlCaseStructuresAnalyzer
 {
-    private const SUPPORTED_TYPES_WITH_CASE_OR_DEFAULT = [
+    private const array SUPPORTED_TYPES_WITH_CASE_OR_DEFAULT = [
         T_SWITCH,
         FCT::T_MATCH,
         FCT::T_ENUM,

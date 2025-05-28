@@ -49,7 +49,7 @@ final class PhpdocTypesFixer extends AbstractPhpdocTypesFixer implements Configu
      *
      * @var array<string, list<string>>
      */
-    private const POSSIBLE_TYPES = [
+    private const array POSSIBLE_TYPES = [
         'alias' => [
             'boolean',
             'double',

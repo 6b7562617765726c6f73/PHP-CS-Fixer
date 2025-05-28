@@ -63,7 +63,7 @@ final class Runner
      *
      * @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/pull/8068
      */
-    private const PARALLEL_BUFFER_SIZE = 16 * (1_024 * 1_024 /* 1MB */);
+    private const mixed PARALLEL_BUFFER_SIZE = 16 * (1_024 * 1_024 /* 1MB */);
 
     private DifferInterface $differ;
 

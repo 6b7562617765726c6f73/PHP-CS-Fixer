@@ -55,7 +55,7 @@ final class PhpdocSeparationFixer extends AbstractFixer implements ConfigurableF
      *
      * @var list<list<string>>
      */
-    public const OPTION_GROUPS_DEFAULT = [
+    public const array OPTION_GROUPS_DEFAULT = [
         ['author', 'copyright', 'license'],
         ['category', 'package', 'subpackage'],
         ['property', 'property-read', 'property-write'],

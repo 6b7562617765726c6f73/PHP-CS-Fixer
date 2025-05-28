@@ -50,7 +50,7 @@ final class BlankLineBeforeStatementFixer extends AbstractFixer implements Confi
     /**
      * @var array<string, int>
      */
-    private const TOKEN_MAP = [
+    private const array TOKEN_MAP = [
         'break' => T_BREAK,
         'case' => T_CASE,
         'continue' => T_CONTINUE,

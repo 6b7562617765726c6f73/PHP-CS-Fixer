@@ -50,13 +50,13 @@ final class GroupImportFixer extends AbstractFixer implements ConfigurableFixerI
     use ConfigurableFixerTrait;
 
     /** @internal */
-    public const GROUP_CLASSY = 'classy';
+    public const string GROUP_CLASSY = 'classy';
 
     /** @internal */
-    public const GROUP_CONSTANTS = 'constants';
+    public const string GROUP_CONSTANTS = 'constants';
 
     /** @internal */
-    public const GROUP_FUNCTIONS = 'functions';
+    public const string GROUP_FUNCTIONS = 'functions';
 
     public function getDefinition(): FixerDefinitionInterface
     {

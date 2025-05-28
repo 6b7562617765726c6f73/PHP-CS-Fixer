@@ -48,7 +48,7 @@ final class StatementIndentationFixer extends AbstractFixer implements Configura
     use ConfigurableFixerTrait;
 
     use Indentation;
-    private const BLOCK_SIGNATURE_FIRST_TOKENS = [
+    private const array BLOCK_SIGNATURE_FIRST_TOKENS = [
         T_USE,
         T_IF,
         T_ELSE,
@@ -69,7 +69,7 @@ final class StatementIndentationFixer extends AbstractFixer implements Configura
         T_CONST,
         FCT::T_MATCH,
     ];
-    private const CONTROL_STRUCTURE_POSSIBIBLY_WITHOUT_BRACES_TOKENS = [
+    private const array CONTROL_STRUCTURE_POSSIBIBLY_WITHOUT_BRACES_TOKENS = [
         T_IF,
         T_ELSE,
         T_ELSEIF,
@@ -78,8 +78,8 @@ final class StatementIndentationFixer extends AbstractFixer implements Configura
         T_WHILE,
         T_DO,
     ];
-    private const BLOCK_FIRST_TOKENS = ['{', [CT::T_DESTRUCTURING_SQUARE_BRACE_OPEN], [CT::T_USE_TRAIT], [CT::T_GROUP_IMPORT_BRACE_OPEN], [CT::T_PROPERTY_HOOK_BRACE_OPEN], [FCT::T_ATTRIBUTE]];
-    private const PROPERTY_KEYWORDS = [T_VAR, T_PUBLIC, T_PROTECTED, T_PRIVATE, T_STATIC, FCT::T_READONLY];
+    private const array BLOCK_FIRST_TOKENS = ['{', [CT::T_DESTRUCTURING_SQUARE_BRACE_OPEN], [CT::T_USE_TRAIT], [CT::T_GROUP_IMPORT_BRACE_OPEN], [CT::T_PROPERTY_HOOK_BRACE_OPEN], [FCT::T_ATTRIBUTE]];
+    private const array PROPERTY_KEYWORDS = [T_VAR, T_PUBLIC, T_PROTECTED, T_PRIVATE, T_STATIC, FCT::T_READONLY];
 
     private AlternativeSyntaxAnalyzer $alternativeSyntaxAnalyzer;
 

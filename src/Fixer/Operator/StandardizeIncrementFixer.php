@@ -27,7 +27,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class StandardizeIncrementFixer extends AbstractIncrementOperatorFixer
 {
-    private const EXPRESSION_END_TOKENS = [
+    private const array EXPRESSION_END_TOKENS = [
         ';',
         ')',
         ']',

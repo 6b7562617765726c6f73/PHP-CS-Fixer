@@ -64,12 +64,12 @@ final class BracesFixer extends AbstractProxyFixer implements ConfigurableFixerI
     /**
      * @internal
      */
-    public const LINE_NEXT = 'next';
+    public const string LINE_NEXT = 'next';
 
     /**
      * @internal
      */
-    public const LINE_SAME = 'same';
+    public const string LINE_SAME = 'same';
 
     private ?BracesPositionFixer $bracesPositionFixer = null;
 

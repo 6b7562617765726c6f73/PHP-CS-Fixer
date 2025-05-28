@@ -31,7 +31,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class UseTransformer extends AbstractTransformer
 {
-    private const CLASS_TYPES = [T_TRAIT, FCT::T_ENUM];
+    private const array CLASS_TYPES = [T_TRAIT, FCT::T_ENUM];
 
     public function getPriority(): int
     {

@@ -60,14 +60,14 @@ final class PhpdocAlignFixer extends AbstractFixer implements ConfigurableFixerI
     /**
      * @internal
      */
-    public const ALIGN_LEFT = 'left';
+    public const string ALIGN_LEFT = 'left';
 
     /**
      * @internal
      */
-    public const ALIGN_VERTICAL = 'vertical';
+    public const string ALIGN_VERTICAL = 'vertical';
 
-    private const DEFAULT_TAGS = [
+    private const array DEFAULT_TAGS = [
         'method',
         'param',
         'property',
@@ -77,7 +77,7 @@ final class PhpdocAlignFixer extends AbstractFixer implements ConfigurableFixerI
         'var',
     ];
 
-    private const TAGS_WITH_NAME = [
+    private const array TAGS_WITH_NAME = [
         'param',
         'property',
         'property-read',
@@ -99,15 +99,15 @@ final class PhpdocAlignFixer extends AbstractFixer implements ConfigurableFixerI
         'psalm-assert-if-false',
     ];
 
-    private const TAGS_WITH_METHOD_SIGNATURE = [
+    private const array TAGS_WITH_METHOD_SIGNATURE = [
         'method',
         'phpstan-method',
         'psalm-method',
     ];
 
-    private const DEFAULT_SPACING = 1;
+    private const int DEFAULT_SPACING = 1;
 
-    private const DEFAULT_SPACING_KEY = '_default';
+    private const string DEFAULT_SPACING_KEY = '_default';
 
     private string $regex;
 

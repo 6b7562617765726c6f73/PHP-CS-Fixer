@@ -27,10 +27,10 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class CommentsAnalyzer
 {
-    private const TYPE_HASH = 1;
-    private const TYPE_DOUBLE_SLASH = 2;
-    private const TYPE_SLASH_ASTERISK = 3;
-    private const SKIP_TYPES = [
+    private const int TYPE_HASH = 1;
+    private const int TYPE_DOUBLE_SLASH = 2;
+    private const int TYPE_SLASH_ASTERISK = 3;
+    private const array SKIP_TYPES = [
         T_PRIVATE,
         T_PROTECTED,
         T_PUBLIC,

@@ -49,7 +49,7 @@ final class PhpUnitStrictFixer extends AbstractPhpUnitFixer implements Configura
     /**
      * @var array<string, string>
      */
-    private const ASSERTION_MAP = [
+    private const array ASSERTION_MAP = [
         'assertAttributeEquals' => 'assertAttributeSame',
         'assertAttributeNotEquals' => 'assertAttributeNotSame',
         'assertEquals' => 'assertSame',

@@ -49,7 +49,7 @@ final class NonPrintableCharacterFixer extends AbstractFixer implements Configur
     /**
      * @var list<int>
      */
-    private const TOKENS = [
+    private const array TOKENS = [
         T_STRING_VARNAME,
         T_INLINE_HTML,
         T_VARIABLE,

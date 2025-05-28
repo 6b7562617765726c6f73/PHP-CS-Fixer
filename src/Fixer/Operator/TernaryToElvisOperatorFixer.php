@@ -31,7 +31,7 @@ final class TernaryToElvisOperatorFixer extends AbstractFixer
      *
      * @var list<array{int}|string>
      */
-    private const VALID_BEFORE_ENDTYPES = [
+    private const array VALID_BEFORE_ENDTYPES = [
         '=',
         [T_OPEN_TAG],
         [T_OPEN_TAG_WITH_ECHO],

@@ -31,7 +31,7 @@ final class TypeAnalysis implements StartEndTokenAwareAnalysis
      *
      * @var list<string>
      */
-    private const RESERVED_TYPES = [
+    private const array RESERVED_TYPES = [
         'array',
         'bool',
         'callable',

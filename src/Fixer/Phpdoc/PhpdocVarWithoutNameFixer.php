@@ -32,7 +32,7 @@ use PhpCsFixer\Tokenizer\Tokens;
  */
 final class PhpdocVarWithoutNameFixer extends AbstractFixer
 {
-    private const PROPERTY_MODIFIER_KINDS = [T_PRIVATE, T_PROTECTED, T_PUBLIC, T_VAR, FCT::T_READONLY];
+    private const array PROPERTY_MODIFIER_KINDS = [T_PRIVATE, T_PROTECTED, T_PUBLIC, T_VAR, FCT::T_READONLY];
 
     public function getDefinition(): FixerDefinitionInterface
     {

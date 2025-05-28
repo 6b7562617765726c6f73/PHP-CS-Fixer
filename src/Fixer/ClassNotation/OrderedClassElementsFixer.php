@@ -62,12 +62,12 @@ final class OrderedClassElementsFixer extends AbstractFixer implements Configura
     use ConfigurableFixerTrait;
 
     /** @internal */
-    public const SORT_ALPHA = 'alpha';
+    public const string SORT_ALPHA = 'alpha';
 
     /** @internal */
-    public const SORT_NONE = 'none';
+    public const string SORT_NONE = 'none';
 
-    private const SUPPORTED_SORT_ALGORITHMS = [
+    private const array SUPPORTED_SORT_ALGORITHMS = [
         self::SORT_NONE,
         self::SORT_ALPHA,
     ];
@@ -75,7 +75,7 @@ final class OrderedClassElementsFixer extends AbstractFixer implements Configura
     /**
      * @var array<string, null|list<string>> Array containing all class element base types (keys) and their parent types (values)
      */
-    private const TYPE_HIERARCHY = [
+    private const array TYPE_HIERARCHY = [
         'use_trait' => null,
         'public' => null,
         'protected' => null,
@@ -116,7 +116,7 @@ final class OrderedClassElementsFixer extends AbstractFixer implements Configura
     /**
      * @var array<string, null> Array containing special method types
      */
-    private const SPECIAL_TYPES = [
+    private const array SPECIAL_TYPES = [
         'construct' => null,
         'destruct' => null,
         'magic' => null,

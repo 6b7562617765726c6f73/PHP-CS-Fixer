@@ -26,7 +26,7 @@ final class ProgressOutputFactory
     /**
      * @var array<ProgressOutputType::*, class-string<ProgressOutputInterface>>
      */
-    private const OUTPUT_TYPE_MAP = [
+    private const array OUTPUT_TYPE_MAP = [
         ProgressOutputType::NONE => NullOutput::class,
         ProgressOutputType::DOTS => DotsOutput::class,
         ProgressOutputType::BAR => PercentageBarOutput::class,
