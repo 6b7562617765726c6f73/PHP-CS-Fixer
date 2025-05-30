@@ -32,8 +32,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'help')]
 final class HelpCommand extends BaseHelpCommand
 {
-    protected static $defaultName = 'help';
-
     /**
      * Returns the allowed values of the given option that can be converted to a string.
      *

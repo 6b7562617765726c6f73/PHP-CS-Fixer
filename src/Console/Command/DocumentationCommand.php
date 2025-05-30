@@ -33,8 +33,6 @@ use Symfony\Component\Finder\SplFileInfo;
 #[AsCommand(name: 'documentation')]
 final class DocumentationCommand extends Command
 {
-    protected static $defaultName = 'documentation';
-
     private Filesystem $filesystem;
 
     public function __construct(Filesystem $filesystem)

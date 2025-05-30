@@ -31,17 +31,17 @@ use Symfony\Component\Console\Command\Command;
 final class CommandTest extends TestCase
 {
     /**
-     * @dataProvider provideCommandHasNameConstCases
+     * @dataProvider provideCommandDoesNotHaveNameStaticPropertyCases
      */
-    public function testCommandHasNameConst(Command $command): void
+    public function testCommandDoesNotHaveNameStaticProperty(Command $command): void
     {
-        self::assertNotNull($command::getDefaultName());
+        self::assertFalse(property_exists($command, 'defaultName'));
     }
 
     /**
      * @return iterable<int, array{Command}>
      */
-    public static function provideCommandHasNameConstCases(): iterable
+    public static function provideCommandDoesNotHaveNameStaticPropertyCases(): iterable
     {
         $application = new Application();
         $commands = $application->all();

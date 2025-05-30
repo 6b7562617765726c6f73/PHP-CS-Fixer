@@ -37,8 +37,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'self-update')]
 final class SelfUpdateCommand extends Command
 {
-    protected static $defaultName = 'self-update';
-
     private NewVersionCheckerInterface $versionChecker;
 
     private ToolInfoInterface $toolInfo;

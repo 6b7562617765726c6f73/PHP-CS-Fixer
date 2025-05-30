@@ -33,8 +33,6 @@ use Symfony\Component\Filesystem\Path;
 #[AsCommand(name: 'list-files')]
 final class ListFilesCommand extends Command
 {
-    protected static $defaultName = 'list-files';
-
     private ConfigInterface $defaultConfig;
 
     private ToolInfoInterface $toolInfo;
